@@ -202,8 +202,7 @@ public class mancala
             nextstate=new PrintWriter(new FileWriter(new File("next_state.txt")));  
             output=new File("traverse_log.txt");
             traverselog=new PrintWriter(new FileWriter(output));            
-            //file=new Scanner(new FileReader(args[1]));
-            file=new Scanner(new FileReader("C:/Users/Shreya/Documents/Trojan/Fall '15/561- AI/HW/HW2/New States/input_veer.txt"));
+            file=new Scanner(new FileReader(args[1]));
             int task=Integer.parseInt(file.nextLine()); //Line 1 
             player_no=Integer.parseInt(file.nextLine())-1;//Line 2
             opponent=(player_no+1)%2;
